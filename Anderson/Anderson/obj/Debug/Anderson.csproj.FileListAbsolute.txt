@@ -1,0 +1,8 @@
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\bin\Debug\Anderson.exe.config
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\bin\Debug\Anderson.exe
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\bin\Debug\Anderson.pdb
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\obj\Debug\Anderson.csproj.AssemblyReference.cache
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\obj\Debug\Anderson.csproj.SuggestedBindingRedirects.cache
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\obj\Debug\Anderson.csproj.CoreCompileInputs.cache
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\obj\Debug\Anderson.exe
+C:\Users\CallmeCarlos\Documents\GitHub\Anderson\Anderson\Anderson\obj\Debug\Anderson.pdb
