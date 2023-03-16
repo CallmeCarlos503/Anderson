@@ -8,8 +8,6 @@ namespace Anderson
 {
     internal class Opciones
     {
-        double Vi, t, g, h, W;
-        Vi = 0;
         public Opciones() {
             Console.WriteLine("Bienvenido al sistema de opciones");
         }
@@ -17,30 +15,28 @@ namespace Anderson
         {
             try
             {
-                
-                Console.WriteLine("****INSERTE LOS DATOS NECESARIOS PARA LA ALTURA VERTICAL****");
-                Console.WriteLine("Inserte la velocida inicial");
-                Vi = double.Parse(Console.ReadLine());
-                Console.WriteLine("Inserte  el tiempo");
-                t = double.Parse(Console.ReadLine());
-                Console.WriteLine("Inserte de cuanto es la gravedad");
-                g = double.Parse(Console.ReadLine());
-                Console.WriteLine("****INSERTE LOS DATOS NECESARIOS PARA LA ENERGIA POTENCIAL GRAVITACIONAL****");
-                Console.WriteLine("Escribe el peso");
-                W= double.Parse(Console.ReadLine());
-                Console.WriteLine("La altura vertical es de " + AlturaVertical(Vi,t,g));
-                Console.WriteLine("La energia Potencial Gravitacional es de " + EnergiaPotencia(W));
+                double h, Epg, K;
+                double m, g = 9.8; 
+                double t;
+
+                Console.Write("Ingrese la altura desde la que se deja caer el cuerpo (en metros): ");
+                h = double.Parse(Console.ReadLine());
+
+                Console.Write("Ingrese la masa del cuerpo (en kilogramos): ");
+                m = double.Parse(Console.ReadLine());
+
+                t = Math.Sqrt(2 * h / g); 
+
+                Epg = m * g * h; 
+
+                K = 0.5 * m * Math.Pow(g * t, 2); 
+
+                Console.WriteLine("El tiempo de caída es: " + t.ToString("0.00") + " segundos");
+                Console.WriteLine("La energía potencial gravitacional del cuerpo es: " + Epg.ToString("0.00") + " joules");
+                Console.WriteLine("Energia cinetica al llegar al piso: " + Epg.ToString("0.00") + " joules");
             }
             catch(Exception ex) { 
             }
-        }
-        public Double AlturaVertical(Double Vi, Double t, Double g)
-        {
-            return Vi * t + 1 / 2 * g * Math.Pow(t, 2);
-        }
-        public Double EnergiaPotencia(Double w)
-        {
-            return AlturaVertical();
         }
     }
 }

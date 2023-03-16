@@ -21,12 +21,7 @@ namespace Anderson
             catch (Exception ex) { 
                 Console.WriteLine(ex.Message);
             }
-        }
-        public void mensaje()
-        {
-            Console.WriteLine("puto");
-        }
-       
+        }       
 
     }
 }
