@@ -17,25 +17,28 @@ namespace Anderson
             {
                 double h, Epg, K;
                 double m, g = 9.8; 
-                double t;
+                double t,Altura=0.00;
 
                 Console.Write("Ingrese la altura desde la que se deja caer el cuerpo (en metros): ");
                 h = double.Parse(Console.ReadLine());
 
                 Console.Write("Ingrese la masa del cuerpo (en kilogramos): ");
                 m = double.Parse(Console.ReadLine());
+                Console.Write("Ingrese el tiempo: ");
+                t = double.Parse(Console.ReadLine());
 
-                t = Math.Sqrt(2 * h / g); 
+                Altura = t + 1 / 2 * g*Math.Pow(t,2);
 
-                Epg = m * g * h; 
+                Epg = m *Altura; 
 
                 K = 0.5 * m * Math.Pow(g * t, 2); 
 
-                Console.WriteLine("El tiempo de caída es: " + t.ToString("0.00") + " segundos");
+                Console.WriteLine("El tiempo de caída es: " + Altura.ToString("0.00") + " segundos");
                 Console.WriteLine("La energía potencial gravitacional del cuerpo es: " + Epg.ToString("0.00") + " joules");
                 Console.WriteLine("Energia cinetica al llegar al piso: " + Epg.ToString("0.00") + " joules");
             }
-            catch(Exception ex) { 
+            catch(Exception ex) {
+                Console.WriteLine("Error, eso no es un numero");
             }
         }
     }
